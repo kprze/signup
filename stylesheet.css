@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    height: 100vh;
+}
+
+/* Parent containers for page layout */
+.leftContainer {
+    width: 35vw;
+    background-color: lightblue;
+}
+
+.rightContainer {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    background-color: lightcoral;
+}
+
+/* Child container styles within rightContainer */
+.textContainer {
+    flex: 1;
+    background-color: lightgreen;
+}
+
+.signupContainer {
+    flex: 2;
+    background-color: lightyellow;
+}
+
+.buttonContainer {
+    flex: 1;
+    background-color: lightgray;
+}
