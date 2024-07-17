@@ -31,3 +31,25 @@ body{
     flex: 1;
     background-color: lightgray;
 }
+
+/* Form styles */
+
+form p{
+    width: 50%;
+    margin: auto;
+}
+
+section{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+}
+
+p label{
+    width: 100%;
+}
