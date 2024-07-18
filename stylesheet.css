@@ -25,6 +25,8 @@ body{
 .signupContainer {
     flex: 2;
     background-color: lightyellow;
+    display: flex;
+    align-items: center;
 }
 
 .buttonContainer {
@@ -34,20 +36,20 @@ body{
 
 /* Form styles */
 
-form p{
-    width: 50%;
-    margin: auto;
+form{
+    margin: 3em;
 }
 
 section{
-    display: flex;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
     margin: 0;
     padding: 0;
 }
 
 label {
-    position: relative;
-    display: inline-block;
+    display: block;
 }
 
 p label{
