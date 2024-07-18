@@ -21,14 +21,14 @@
                         <span>First Name: </span>
                         <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="firstname" name="firstname" placeholder="John" required/>
+                        <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" placeholder="John" required/>
                     </p>
                     <p>
                         <label for="lastname">
                         <span>Last Name: </span>
                         <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Jones" required/>
+                        <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" placeholder="Jones" required/>
                     </p>
                     <p>
                         <label for="mail">
@@ -41,7 +41,7 @@
                         <label for="number">
                         <span>Phone Number: </span>
                         </label>
-                        <input type="tel" id="number" name="phone" placeholder="07000000000"/>
+                        <input type="tel" id="number" name="phone" pattern="07[0-9]{9}" placeholder="07000000000"/>
                     </p>
                     <p>
                         <label for="pwd">
