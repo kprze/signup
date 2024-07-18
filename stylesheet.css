@@ -52,6 +52,16 @@ label {
     display: block;
 }
 
-p label{
-    width: 100%;
+label strong span {
+    color: red;
+}
+
+input{
+    border-style: solid;
+    border-radius: 0.45em;
+    border-color: black;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
 }
