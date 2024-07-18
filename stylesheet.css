@@ -17,39 +17,25 @@ body{
     width: 65vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex: 1;
     background-color: lightcoral;
-}
-
-/* Child container styles within rightContainer */
-.textContainer {
-    flex: 1;
-    background-color: lightgreen;
-}
-
-.signupContainer {
-    flex: 2;
-    background-color: lightyellow;
-    display: flex;
-    align-items: center;
-}
-
-.buttonContainer {
-    flex: 1;
-    background-color: lightgray;
 }
 
 /* Form styles */
 
 form{
-    margin: 3em;
+    background-color: chocolate;
+    padding: 3em 1em;
 }
 
 section{
-    display: grid;
+    display: inline-grid;
     gap: 2em;
     grid-template-columns: 1fr 1fr;
     margin: 0;
     padding: 0;
+    max-width: 65vw;
 }
 
 label {
