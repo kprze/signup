@@ -1,3 +1,7 @@
+html{
+    font-family: "Poppins", sans-serif;
+}
+
 body{
     display: flex;
     height: 100vh;
@@ -57,6 +61,7 @@ label strong span {
 }
 
 input{
+    padding: 0 0.256em;
     border-style: solid;
     border-radius: 0.45em;
     border-color: black;
