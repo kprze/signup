@@ -33,7 +33,7 @@ form{
 section{
     display: inline-grid;
     gap: 2em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
     margin: 3em 2em;
     padding: 0;
     max-width: 65vw;
@@ -41,6 +41,7 @@ section{
 
 label {
     display: block;
+    max-width: 100%;
 }
 
 label strong span {
@@ -52,6 +53,7 @@ input{
     border-style: solid;
     border-radius: 0.45em;
     border-color: black;
+    max-width: 100%;
 }
 
 input:invalid:not(:placeholder-shown) {
