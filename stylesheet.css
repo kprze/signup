@@ -27,11 +27,24 @@ html {
 }
 
 .logoContainer {
-    background-color: #000000;
-    opacity: 15%;
+    background-color: rgba(0,0,0,.25);
+    color: white;
     min-height: 16vh;
-    margin-top: 11.1rem;
+    margin-top: 8em;
     margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.logoContainer img{
+    max-width: 6em;
+}
+
+.logoContainer p{
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 .rightSide {
