@@ -20,14 +20,17 @@ html {
 /* Parent containers for page layout */
 .leftSide {
     width: 36vw;
+    background-image: url("images/sea.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #4E4187;
 }
 
 .logoContainer {
-    background-color: #18020C;
-    opacity: 50%;
+    background-color: #000000;
+    opacity: 15%;
     min-height: 16vh;
-    margin-top: 12.1rem;
+    margin-top: 11.1rem;
     margin-bottom: auto;
 }
 
