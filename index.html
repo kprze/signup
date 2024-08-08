@@ -11,60 +11,64 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="leftContainer">
-        <div class="logoContainer"></div>
-    </div>
-    <div class="rightContainer">
-            <div class="signUpInfo">
-                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
-                <p>Sign up <i style="font-weight: bold;">now</i>  to get started.</p>                
-                <p>You <i style="font-weight: bold;">know</i> you want to.</p>
+    <div class="mainContainer">
+        <div class="leftSide">
+            <div class="logoContainer"></div>
+        </div>
+        <div class="rightSide">
+                <div class="topText">
+                    <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! Sign up <i style="font-weight: bold;">now</i>  to get started.</p>                
+                    <p>You <i style="font-weight: bold;">know</i> you want to.</p>
+                </div>
+                <form class="signUpForm" id="signUp" action="exmaple.com/path" method="post">
+                    <fieldset>
+                        <legend>Sign Up now!</legend>
+                        <p>
+                            <label for="firstname">
+                            <span>First Name: </span>
+                            <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="text" id="firstname" name="firstname" placeholder=" " required/>
+                        </p>
+                        <p>
+                            <label for="lastname">
+                            <span>Last Name: </span>
+                            <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="text" id="lastname" name="lastname" placeholder=" " required/>
+                        </p>
+                        <p>
+                            <label for="mail">
+                            <span>Email: </span>
+                            <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="email" id="mail" name="usermail" placeholder=" " required/>
+                        </p>
+                        <p>
+                            <label for="number">
+                            <span>Phone Number: </span>
+                            </label>
+                            <input type="tel" id="number" name="phone" pattern="07[0-9]{9}" placeholder=" "/>
+                        </p>
+                        <p>
+                            <label for="pwd">
+                            <span>Password: </span>
+                            <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="password" id="pwd" name="password" placeholder=" " required/>
+                        </p>
+                        <p>
+                            <label for="confirmpwd">
+                            <span>Confirm Password: </span>
+                            <strong><span aria-label="required">*</span></strong>
+                            </label>
+                            <input type="password" id="confirmpwd" name="confirmpassword" placeholder=" " required/>
+                        </p>
+                    </fieldset>
+                </form>
+                <button type="submit" form="signUpForm" class="registerButton">Create Account</button>
+                
             </div>
-            <form>
-                <section>
-                    <p>
-                        <label for="firstname">
-                        <span>First Name: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]*" placeholder="John" required/>
-                    </p>
-                    <p>
-                        <label for="lastname">
-                        <span>Last Name: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]*" placeholder="Jones" required/>
-                    </p>
-                    <p>
-                        <label for="mail">
-                        <span>Email: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="email" id="mail" name="usermail" placeholder="name@domain.com" required/>
-                    </p>
-                    <p>
-                        <label for="number">
-                        <span>Phone Number: </span>
-                        </label>
-                        <input type="tel" id="number" name="phone" pattern="07[0-9]{9}" placeholder="07000000000"/>
-                    </p>
-                    <p>
-                        <label for="pwd">
-                        <span>Password: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="password" id="pwd" name="password" placeholder="Password" required/>
-                    </p>
-                    <p>
-                        <label for="confirmpwd">
-                        <span>Confirm Password: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        </label>
-                        <input type="password" id="confirmpwd" name="confirmpassword" placeholder="Confirm password" required/>
-                    </p>
-                </section>
-            </form>
         </div>
     </div>
 </body>
